@@ -3,7 +3,7 @@ package com.logicaswiss.sfg_di.services;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
-@Profile("ES")
+@Profile({"ES","default"})
 @Service("i18nGreetingService")
 public class I18nGreetingServiceSpanish implements GreetingService{
     @Override
