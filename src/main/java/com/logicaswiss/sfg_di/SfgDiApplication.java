@@ -4,7 +4,6 @@ import com.logicaswiss.sfg_di.controllers.ConstructorInjectedController;
 import com.logicaswiss.sfg_di.controllers.MyController;
 import com.logicaswiss.sfg_di.controllers.PropertyInjectedController;
 import com.logicaswiss.sfg_di.controllers.SetterInjectedController;
-import org.springframework.boot.ApplicationContextFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -17,8 +16,8 @@ public class SfgDiApplication {
         ApplicationContext ctx = SpringApplication.run(SfgDiApplication.class, args);
         MyController controller = ctx.getBean(MyController.class);
 
-        String greetings = controller.sayHello();
-        System.out.println(greetings);
+        System.out.println("-----From Primary Bean-----------");
+        System.out.println(controller.sayHello());
 
         System.out.println("------Property Injection-------------");
         PropertyInjectedController propertyInjectedController = (PropertyInjectedController) ctx.getBean("propertyInjectedController");
