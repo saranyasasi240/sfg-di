@@ -5,11 +5,9 @@ import com.logicaswiss.pets.PetServiceFactory;
 import com.logicaswiss.sfgdi.repositories.EnglishGreetingRepository;
 import com.logicaswiss.sfgdi.repositories.EnglishGreetingRepositoryImpl;
 import com.logicaswiss.sfgdi.services.*;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Primary;
-import org.springframework.context.annotation.Profile;
+import org.springframework.context.annotation.*;
 
+@ImportResource("classpath:spring-config.xml")
 @Configuration
 public class GreetingServiceConfig {
 
@@ -28,11 +26,6 @@ public class GreetingServiceConfig {
     @Bean
     PetService catPetService(PetServiceFactory petServiceFactory) {
         return petServiceFactory.getPetService("cat");
-    }
-
-    @Bean
-    ConstructorInjectedGreetingServiceImpl constructorInjectedGreetingService() {
-        return new ConstructorInjectedGreetingServiceImpl();
     }
 
     @Bean
