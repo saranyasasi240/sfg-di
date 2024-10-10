@@ -1,4 +1,4 @@
-package com.logicaswiss.sfg_di.services;
+package com.logicaswiss.pets;
 
 public interface PetService {
     String getPetType();
