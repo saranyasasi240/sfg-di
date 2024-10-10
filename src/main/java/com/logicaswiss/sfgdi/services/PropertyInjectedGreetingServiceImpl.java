@@ -1,8 +1,7 @@
-package com.logicaswiss.sfg_di.services;
+package com.logicaswiss.sfgdi.services;
 
 import org.springframework.stereotype.Service;
 
-@Service
 public class PropertyInjectedGreetingServiceImpl implements GreetingService {
 
     @Override

@@ -1,6 +1,6 @@
-package com.logicaswiss.sfg_di.controllers;
+package com.logicaswiss.sfgdi.controllers;
 
-import com.logicaswiss.sfg_di.services.GreetingService;
+import com.logicaswiss.sfgdi.services.GreetingService;
 import org.springframework.stereotype.Controller;
 
 @Controller

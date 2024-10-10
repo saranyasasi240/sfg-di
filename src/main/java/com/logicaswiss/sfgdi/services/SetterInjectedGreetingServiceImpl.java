@@ -1,4 +1,4 @@
-package com.logicaswiss.sfg_di.services;
+package com.logicaswiss.sfgdi.services;
 
 import org.springframework.stereotype.Service;
 

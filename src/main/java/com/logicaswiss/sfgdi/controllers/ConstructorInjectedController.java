@@ -1,6 +1,6 @@
-package com.logicaswiss.sfg_di.controllers;
+package com.logicaswiss.sfgdi.controllers;
 
-import com.logicaswiss.sfg_di.services.GreetingService;
+import com.logicaswiss.sfgdi.services.GreetingService;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 
@@ -8,7 +8,7 @@ import org.springframework.stereotype.Controller;
 public class ConstructorInjectedController {
     private final GreetingService greetingService;
 
-    public ConstructorInjectedController(@Qualifier("constructorInjectedGreetingServiceImpl") GreetingService greetingService) {
+    public ConstructorInjectedController(@Qualifier("constructorInjectedGreetingService") GreetingService greetingService) {
         this.greetingService = greetingService;
     }
 

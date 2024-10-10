@@ -1,4 +1,4 @@
-package com.logicaswiss.sfg_di;
+package com.logicaswiss.sfgdi;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

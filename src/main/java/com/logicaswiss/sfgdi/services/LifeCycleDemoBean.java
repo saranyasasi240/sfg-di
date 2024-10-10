@@ -1,4 +1,4 @@
-package com.logicaswiss.sfg_di.services;
+package com.logicaswiss.sfgdi.services;
 
 import jakarta.annotation.PostConstruct;
 import jakarta.annotation.PreDestroy;

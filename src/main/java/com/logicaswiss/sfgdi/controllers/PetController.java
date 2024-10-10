@@ -1,4 +1,4 @@
-package com.logicaswiss.sfg_di.controllers;
+package com.logicaswiss.sfgdi.controllers;
 
 import com.logicaswiss.pets.PetService;
 import org.springframework.stereotype.Controller;
