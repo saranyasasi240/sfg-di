@@ -1,0 +1,4 @@
+com:
+  username: YamlTestUser
+  password: YamlTestPassword
+  jdbcUrl: YamlTestURl
