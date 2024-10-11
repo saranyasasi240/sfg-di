@@ -1,0 +1,10 @@
+
+spring:
+  profiles:
+    active: cat,ES
+  application:
+    name: sfg-di
+com:
+  username: YamlUser
+  password: YamlPassword
+  jdbcUrl: YamlURl

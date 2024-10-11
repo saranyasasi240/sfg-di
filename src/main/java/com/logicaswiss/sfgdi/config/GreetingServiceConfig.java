@@ -14,7 +14,7 @@ import org.springframework.context.annotation.*;
 public class GreetingServiceConfig {
 
     @Bean
-    FakeDataSource fakeDataSource(@Value("${com.username}") String userName, @Value("${com.password}") String password, @Value("${com.jdbcurl}") String jdbcUrl) {
+    FakeDataSource fakeDataSource(@Value("${com.username}") String userName, @Value("${com.password}") String password, @Value("${com.jdbcUrl}") String jdbcUrl) {
         FakeDataSource fakeDataSource = new FakeDataSource();
         fakeDataSource.setUserName(userName);
         fakeDataSource.setPassword(password);
