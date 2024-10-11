@@ -1,5 +1,6 @@
 package com.logicaswiss.sfgdi;
 
+import com.logicaswiss.sfgdi.config.SfgConfiguration;
 import com.logicaswiss.sfgdi.controllers.*;
 import com.logicaswiss.sfgdi.datasource.FakeDataSource;
 import com.logicaswiss.sfgdi.services.PrototypeBean;
@@ -51,9 +52,17 @@ public class SfgDiApplication {
         PrototypeBean prototypeBean1 = ctx.getBean(PrototypeBean.class);
         System.out.println(prototypeBean1.getMyScope());
 
+        System.out.println("-------------From FakeDataSource----------");
+
         FakeDataSource fakeDataSource = ctx.getBean(FakeDataSource.class);
         System.out.println(fakeDataSource.getUserName());
         System.out.println(fakeDataSource.getPassword());
         System.out.println(fakeDataSource.getJdbcUrl());
+
+        System.out.println("-------------From SfgConfiguration---------");
+        SfgConfiguration sfgConfiguration = ctx.getBean(SfgConfiguration.class);
+        System.out.println(sfgConfiguration.getUserName());
+        System.out.println(sfgConfiguration.getPassword());
+        System.out.println(sfgConfiguration.getJdbcUrl());
     }
 }
